@@ -1,58 +1,50 @@
-# Django_test(E-Commerce API)
-Don't bother about UIs, we're here for APIs_,
-Here you need to identify the schema/model fields by observing the UIs, The goal of this assignment is to build **_API_** for a **E-Commerce website** site in which you are free to play with as much as possible your sample data.
+# Django_test(class management API)
 
-<img src="items.png" />
-<img src="review.png" />
-<img src="orders.png" />
------
--
--
--
+Don't bother about UIs, we're here for APIs,
+Here you need to identify the schema/model fields by observing the UIs, The goal of this assignment is to build **_API_** for a **Class Management** site in which you are free to play with as much as possible your sample data.
+
+<img src="class_mng1.png" />
+<img src="classmng2.png" />
+
+---
 
 <hr>
 
 ### API Features:
 
-1. User login for customer and seller.
+1. User login for student and class teacher.
 
-- A customer can see only items.(use permission and authentication)
-- A seller can upload items detail.
+- A student can see only his assignments and announcements.(use permissions and authentication)
+- A class teacher can create class and add students in that class.
 
-2. Items
+2. Assignment
 
-- A seller can Create, Delete, Get a list of all items that he published,
-- Get single item with all the reviews with ratings.( apply for seller and customer both)
+- A teacher can Create, Delete and Get all assignments that are assigned by him.
+- If a teacher add assignment in a class then it must be accessible for all students of same class.
+- students can solve assignement and upload that in pdf/jpg format.
+- Teacher can check assignment and mark them as completed.
 
-3. Review
+3. Announcements <br>
 
-- Riview on a item.
+- A teacher can add announcement(e.g: holidays, events etc).
+- That announcement will be shown for every student of a class.
 
-4. Ratings
+4. Authentication
 
-- Rating on a item.
-
-5.create order
--A customer can create order (Hints:create api where customer post all details (e.g address, item name ,contact detail etc) 
-
-5. Authentication (Optional)
-
-- Login
-- Logout
-- Signup
-
+- Login (mandatory)
+- Logout(optional)
+- Signup (optional)
 
 <hr>
 
 ### Coding Guidelines
 
-- Please fork current problem repository or use it as template and, add [@divyansh420](https://github.com/divyansh420),[@nitesh5695smilebots](https://github.com/nitesh5695smilebots) as collaborator while intializing repository in github. and follow the given timeline instructions from your mail.
+- Please fork current problem repository or use it as template and, add [@divyansh420](https://github.com/divyansh420) ,[@nitesh5695smilebots](https://github.com/nitesh5695smilebots) as collaborator while intializing repository in github. And follow the given timeline instructions from your mail.
 - The changes/commits will not be considered after timeline mentioned in your mail.
 - Please avoid any frameworks and libraries except **_Django REST framework_**.
 - Focus more on the **_Django REST framework_** side of the problem.
-- After fork do not public the repo
 - You need to add requirements.txt file in project
-- add  a readme.md file and add all details about your APIs.
+- Add a readme.md file and add all details about your APIs.
 - You will be evaluated on a **WORKING PROJECT** for:
   - Modularity of Code
   - Security
@@ -63,3 +55,4 @@ Here you need to identify the schema/model fields by observing the UIs, The goal
   - Completeness.
 - Please ask us for any hurdle in your problem assignment.
 
+<b>Note: <b> please use sqlite database and tables should be related to other tables.
